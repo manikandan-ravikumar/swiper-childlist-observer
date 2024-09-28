@@ -29,7 +29,7 @@ export default function Observer({ swiper, extendParams, on, emit }) {
     observer.observe(target, {
       attributes: typeof options.attributes === 'undefined' ? true : options.attributes,
       childList:
-        swiper.isElement || (typeof options.childList === 'undefined' ? true : options).childList,
+        swiper.isElement || (typeof options.childList === 'undefined' ? true : options.childList),
       characterData: typeof options.characterData === 'undefined' ? true : options.characterData,
     });
 
